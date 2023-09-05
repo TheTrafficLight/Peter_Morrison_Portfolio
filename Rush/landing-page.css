@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3.5vmin;
+}
+
+#background {
+    height: 100vh;
+    width: 100%;
+    filter: blur(5px);
+}
+
+.images {
+    border-radius: 10px 10px 0px 0px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    width: 100%;
+}
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.divider {
+    display: flex;
+    background: rgb(0, 0, 0);
+    /* I changed the height to be a percentage. This can be changed to your liking. set it to 100% if you want to go all the way down*/
+    height: 100vh;
+    width: 5px;
+    /*transform: skew(-0.2turn, 0deg); not working :( */
+    box-shadow: 0px 0px 4px 1px rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+}
+
+.column {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    float: left;
+}
+
+.background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+}
+
+.card {
+    box-shadow: 0 6px 9px 0 rgba(0.2, 0.2, 0.2, 1);
+    width: 85%;
+    height: 85%;
+    left: 7.5%;
+    top: 7.5%;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: rgb(255, 255, 255);
+    border-radius: 11px;
+    transition: 0.2s;
+}
+
+.title {
+    color: grey;
+    font-size: 1.2vw;
+  }
+
+.card:hover img{
+    filter: brightness(1.4)
+}
+
+/* to resize the cards change the width and height of this! */
+.cardContainer {
+    display: flex;
+    width: 50%;
+    aspect-ratio: 5/7;
+    position: absolute;
+    left: 25%;
+    top: 15%;
+}
+
+/* to remove the styles from the links */
+a, a:visited{
+    color: black;
+    text-decoration:none;
+}

@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.parallax {
+    /* The image used */
+
+  
+    /* Full height */  
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+
+  #image1{
+    background-image: url('yannis-h-uaPaEM7MiQQ-unsplash-scaled.jpg');
+  }
+
+  #image2{
+    background-image: url('Earth.-Org-the-growth-of-renewable-energy-what-does-the-future-hold-1200x800.jpg');
+  }

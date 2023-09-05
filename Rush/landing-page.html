@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="landing-page.css">
+</head>
+
+<body>
+    <div class="column">
+        <div class="background">
+        <img src="Factory.jpg" id="background">
+        </div>
+        
+        <div class="cardContainer" onmousemove="trackMouse(this, true)" onmouseleave="trackMouse(this, false)">
+                  
+            <div class="card">
+                <a href="industry-innovation.html">
+                    <img src="Industry-Innovation.png" class="images" alt="Industry, innovation and infrastructure" style="width:100%" draggable="false">
+                    <h1>[REDACTED]</h1>
+                    <p class="title">42adel-dp-09</p>
+                </a>
+            </div>
+        </div> 
+    </div>
+
+    <div class="column">
+        <div class="background">
+        <img src="Empty classroom.jpeg" id="background">
+        </div>
+        
+        <div class="cardContainer" onmousemove="trackMouse(this, true)" onmouseleave="trackMouse(this, false)">
+            <div class="card">
+                <a href="quality-education.html">
+                    <img src="Quality education.png" class="images" alt="Quality education" style="width:100%" draggable="false">
+                    <h1>[REDACTED]</h1>
+                    <p class="title">42adel-dp-41</p>
+                </a>
+            </div>      
+        </div>
+    </div>
+    
+    <div class="divider"></div>
+
+    <script src="move-button.js"></script>
+</body>
+</html>

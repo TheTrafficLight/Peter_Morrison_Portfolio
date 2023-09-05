@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+.backgroundContainer {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+
+}
+#background {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 300%;
+    top: -100%;
+    left: -50%;
+    z-index: -1;
+    background-image: linear-gradient(to right, #c4cbf9, #8aa7c2, #47578a, #311b55, #250230);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.middleColumn {
+    margin: auto;
+    width: 45%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 400%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 75px;
+}
+
+p {
+    text-align: center;
+    color: rgb(40, 40, 43);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 115%
+}
+
+.quote {
+    color: rgb(104, 198, 186);
+    font-size: 160%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    font-weight: bold;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(40, 40, 43);
+    border-radius: 5px;
+}
+
+.copyright {
+    text-align: right;
+    font-size: 80%;
+    font-family: sans-serif;
+    color: white;
+    padding-bottom: 20px;
+}
